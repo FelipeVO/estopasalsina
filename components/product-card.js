@@ -92,7 +92,7 @@ class CustomProductCard extends HTMLElement {
                 <div class="product-content">
                     <h3 class="product-title">${title}</h3>
                     <p class="product-description">${description}</p>
-                    <a href="/products" class="product-button">View Details</a>
+                    <a href="/products" class="product-button">Ver Detalles</a>
                 </div>
             </div>
         `;

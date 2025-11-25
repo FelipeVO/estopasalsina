@@ -112,42 +112,40 @@ class CustomFooter extends HTMLElement {
                 <div>
                     <span class="footer-logo">Estopas Alsina</span>
                     <p class="footer-description">
-                        Crafting premium tow fiber since 1910. A century of tradition woven into every thread.
+                        Elaborando fibra de primera calidad desde 1910. Un siglo de tradición entretejida en cada hilo de nuestros excepcionales productos.
                     </p>
                     <div class="social-links">
                         <a href="#"><i data-feather="facebook"></i></a>
                         <a href="#"><i data-feather="instagram"></i></a>
-                        <a href="#"><i data-feather="twitter"></i></a>
+                        <a href="#"><i data-feather="whatsapp"></i></a>
                         <a href="#"><i data-feather="linkedin"></i></a>
                     </div>
                 </div>
                 
                 <div>
-                    <h3 class="footer-heading">Quick Links</h3>
+                    <h3 class="footer-heading">Navegacion</h3>
                     <ul class="footer-links">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About Us</a></li>
-                        <li><a href="/products">Our Products</a></li>
-                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/">Inicio</a></li>
+                        <li><a href="/about">Nosotros</a></li>
+                        <li><a href="/products">Productos</a></li>
+                        <li><a href="/contact">Contacto</a></li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h3 class="footer-heading">Products</h3>
+                    <h3 class="footer-heading">Soporte</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Cotton Towels</a></li>
-                        <li><a href="#">Linen Collection</a></li>
-                        <li><a href="#">Microfiber Series</a></li>
-                        <li><a href="#">Bamboo Selection</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Entregas</a></li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h3 class="footer-heading">Contact</h3>
+                    <h3 class="footer-heading">Contacto</h3>
                     <ul class="footer-links">
-                        <li><i data-feather="map-pin"></i> 123 Fabric St, Textile District</li>
-                        <li><i data-feather="phone"></i> +1 (555) 123-4567</li>
-                        <li><i data-feather="mail"></i> info@estopasalsina.com</li>
+                        <li><i data-feather="map-pin"></i> Hortiguera 737 CABA</li>
+                        <li><i data-feather="phone"></i> +54 (11) 4413-6680</li>
+                        <li><i data-feather="mail"></i> pmontovioestrugasrl@hotmail.com</li>
                     </ul>
                 </div>
             </div>
