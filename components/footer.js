@@ -125,10 +125,10 @@ class CustomFooter extends HTMLElement {
                 <div>
                     <h3 class="footer-heading">Navegacion</h3>
                     <ul class="footer-links">
-                        <li><a href="/">Inicio</a></li>
-                        <li><a href="/about">Nosotros</a></li>
-                        <li><a href="/products">Productos</a></li>
-                        <li><a href="/contact">Contacto</a></li>
+                        <li><a href="https://felipevo.github.io/estopasalsina/">Inicio</a></li>
+                        <li><a href="about.html">Nosotros</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="">Contacto</a></li>
                     </ul>
                 </div>
                 
