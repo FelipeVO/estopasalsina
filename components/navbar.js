@@ -91,10 +91,10 @@ class CustomNavbar extends HTMLElement {
                 <a href="/" class="logo">Estopas Alsina</a>
                 
                 <div class="nav-links">
-                    <a href="/">Inicio</a>
-                    <a href="about.html">Nosotros</a>
-                    <a href="productos.html ">Productos</a>
-                    <a href="/contact" class="cta-button">Contacto</a>
+                    <a href="/estopasalsina/">Inicio</a>
+                    <a href="/estopasalsina/about">Nosotros</a>
+                    <a href="/estopasalsina/productos">Productos</a>
+                    <a href="" class="cta-button">Contacto</a>
                 </div>
             </nav>
         `;
