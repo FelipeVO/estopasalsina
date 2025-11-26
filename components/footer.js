@@ -143,7 +143,7 @@ class CustomFooter extends HTMLElement {
                 <div>
                     <h3 class="footer-heading">Contacto</h3>
                     <ul class="footer-links">
-                        <li><i data-feather="map-pin"></i> Hortiguera 737 CABA</li>
+                        <li><i data-feather="map-pin"></i> Luzuriaga 550 Valentin Alsina</li>
                         <li><i data-feather="phone"></i> +54 (11) 4413-6680</li>
                         <li><i data-feather="mail"></i> pmontovioestrugasrl@hotmail.com</li>
                     </ul>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros | Estopas Alsina</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f5f5f5',
+                        secondary: '#e5e5e5',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-primary text-black font-sans">
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section -->
+    <section class="relative py-32 flex items-center justify-center bg-gradient-to-b from-primary to-secondary">
+        <div class="text-center px-4 max-w-4xl">
+            <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6 tracking-tight">Nuestra Historia</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-2xl mx-auto leading-relaxed">
+                Más de un siglo de tradición y excelencia en la fabricación de estopas de alta calidad.
+            </p>
+        </div>
+    </section>
+
+    <!-- History Timeline -->
+    <section class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-serif font-bold mb-4">Nuestra Trayectoria</h2>
+            <p class="text-xl max-w-3xl mx-auto text-gray-700">
+                Desde 1910, hemos tejido una historia de pasión, dedicación y calidad excepcional.
+            </p>
+        </div>
+
+        <div class="space-y-16 relative">
+            <!-- Timeline line -->
+            <div class="absolute left-1/2 w-1 h-full bg-gray-200 transform -translate-x-1/2"></div>
+
+            <!-- Timeline Item - 1910 -->
+            <div class="relative flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 md:pr-16 mb-8 md:mb-0 md:text-right">
+                    <h3 class="text-2xl font-serif font-bold mb-2">1910 - Fundación</h3>
+                    <p class="text-gray-700">
+                        Manuel Estruga funda la empresa en un local de la calle Caseros, en Buenos Aires, iniciando una tradición familiar en la producción de estopas de alta calidad.
+                    </p>
+                </div>
+                <div class="hidden md:flex items-center justify-center w-16 h-16 rounded-full bg-black text-white text-xl font-bold z-10 mx-auto">
+                    1910
+                </div>
+                <div class="md:w-1/2 md:pl-16">
+                    <img src="http://static.photos/textures/640x360/105" alt="Fundación 1910" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+
+            <!-- Timeline Item - 1915 -->
+            <div class="relative flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 md:pr-16 order-last mb-8 md:mb-0">
+                    <img src="http://static.photos/textures/640x360/105" alt="Primera fábrica 1915" class="rounded-lg shadow-lg">
+                </div>
+                <div class="hidden md:flex items-center justify-center w-16 h-16 rounded-full bg-black text-white text-xl font-bold z-10 mx-auto">
+                    xxxx
+                </div>
+                <div class="md:w-1/2 md:pl-16 md:text-left order-first md:order-none">
+                    <h3 class="text-2xl font-serif font-bold mb-2">xxx - Titulo</h3>
+                    <p class="text-gray-700">
+                        La empresa se traslada a su propio establecimiento en Hortiguera 737, en la Capital Federal, marcando el inicio de su expansión industrial.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Timeline Item - 1967 -->
+            <div class="relative flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 md:pr-16 mb-8 md:mb-0 md:text-right">
+                    <h3 class="text-2xl font-serif font-bold mb-2">2025 - Actualidad</h3>
+                    <p class="text-gray-700">
+                        La empresa adopta su actual denominación "Estopas Alsina" y consolida todas sus operaciones en la planta de Valentín Alsina, donde continúa produciendo hasta hoy.
+                    </p>
+                </div>
+                <div class="hidden md:flex items-center justify-center w-16 h-16 rounded-full bg-black text-white text-xl font-bold z-10 mx-auto">
+                    2025
+                </div>
+                <div class="md:w-1/2 md:pl-16">
+                    <img src="http://static.photos/textures/640x360/105" alt="Consolidación 1967" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-20 bg-secondary">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-serif font-bold mb-4">Nuestros Valores</h2>
+                <p class="text-xl max-w-3xl mx-auto text-gray-700">
+                    Principios que han guiado nuestro trabajo desde el primer día
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="w-20 h-20 bg-black rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-feather="star" class="text-white w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-4">Calidad</h3>
+                    <p class="text-gray-700">
+                        Mantenemos los más altos estándares de calidad en cada producto que fabricamos, usando solo materiales de primera.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="w-20 h-20 bg-black rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-feather="clock" class="text-white w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-4">Tradición</h3>
+                    <p class="text-gray-700">
+                        Más de un siglo de experiencia y conocimiento transmitido de generación en generación en el arte de fabricar estopas.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="w-20 h-20 bg-black rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-feather="heart" class="text-white w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-4">Compromiso</h3>
+                    <p class="text-gray-700">
+                        Dedicación total a satisfacer las necesidades de nuestros clientes con productos confiables y servicio excepcional.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-serif font-bold mb-4">Nuestro Equipo</h2>
+            <p class="text-xl max-w-3xl mx-auto text-gray-700">
+                Profesionales apasionados por mantener viva la tradición de calidad Alsina
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="text-center">
+                <img src="http://static.photos/textures/640x360/105" alt="Director" class="w-64 h-64 rounded-full object-cover mx-auto mb-6 shadow-lg">
+                <h3 class="text-xl font-serif font-bold mb-2">Nombre Completo</h3>
+                <p class="text-gray-600 mb-4">Director General</p>
+                <p class="text-gray-700">
+                    Tercera generación al frente del negocio familiar, continuando con el legado de excelencia.
+                </p>
+            </div>
+
+            <div class="text-center">
+                <img src="http://static.photos/textures/640x360/105" alt="Producción" class="w-64 h-64 rounded-full object-cover mx-auto mb-6 shadow-lg">
+                <h3 class="text-xl font-serif font-bold mb-2">Nombre Completo</h3>
+                <p class="text-gray-600 mb-4">Jefa de Producción</p>
+                <p class="text-gray-700">
+                    25 años de experiencia garantizando que cada estopa cumpla con nuestros estándares.
+                </p>
+            </div>
+
+            <div class="text-center">
+                <img src="http://static.photos/textures/640x360/105" alt="Ventas" class="w-64 h-64 rounded-full object-cover mx-auto mb-6 shadow-lg">
+                <h3 class="text-xl font-serif font-bold mb-2">Nombre Completo</h3>
+                <p class="text-gray-600 mb-4">Gerente Comercial</p>
+                <p class="text-gray-700">
+                    Conectando a nuestros clientes con los mejores productos para sus necesidades.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

@@ -92,8 +92,8 @@ class CustomNavbar extends HTMLElement {
                 
                 <div class="nav-links">
                     <a href="/">Inicio</a>
-                    <a href="/about">Nosotros</a>
-                    <a href="/products">Productos</a>
+                    <a href="about.html">Nosotros</a>
+                    <a href="productos.html ">Productos</a>
                     <a href="/contact" class="cta-button">Contacto</a>
                 </div>
             </nav>
