@@ -1,0 +1,35 @@
+[
+  {
+    "title": "El Puente",
+    "slug": "el-puente",
+    "short": "Estopa Blanca para lustre Premium.",
+    "description": "Estopa Blanca para lustre Premium. Compuesta con hilados Blancos y suaves, 100% algodón cortada en su tamaño justo y peinada en las estoperas para lograr una textura suave y delicada.",
+    "image": "imgs/estopa-blanca-lustre.png",
+    "details": "Tamaño: 1kg, 5kg. Uso recomendado: lustre de metales y pulido fino. Características: alta absorción, no deja pelusa."
+  },
+  {
+    "title": "V.A.",
+    "slug": "v-a",
+    "short": "Estopa color para limpieza.",
+    "description": "Estopa color para limpieza. Compuesta con hilados de colores variados, 100% algodón ideal para limpieza por su absorción y resistencia.",
+    "image": "imgs/estopa-color-limpieza.png",
+    "details": "Tamaños disponibles: rollo y cortes. Uso: limpieza general y desengrase. Características: resistente y de larga duración."
+  },
+  {
+    "title": "Huinca",
+    "slug": "huinca",
+    "short": "Estopa Blanca para limpieza.",
+    "description": "Estopa Blanca para limpieza. Compuesta con hilados Blancos, 100% algodón ideal para limpieza por su absorción y resistencia.",
+    "image": "imgs/estopa-blanca-limpieza.png",
+    "details": "Ideal para ambientes industriales y talleres. Presentaciones: bolsas y fardos. Excelente relación costo-beneficio."
+  }
+  ,
+  {
+    "title": "Ecopaño",
+    "slug": "ecopano",
+    "short": "Trapos nuevos, disponibles en blanco o a color.",
+    "description": "Trapos nuevos, disponibles en blanco o a color, provenientes de tela 100% de algodón fino como remeras o buzos.",
+    "image": "imgs/trapos.jpg",
+    "details": "Presentaciones: rollos y cortes. Uso: limpieza fina y absorción doméstica e industrial."
+  }
+]

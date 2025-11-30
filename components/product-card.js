@@ -1,6 +1,6 @@
 class CustomProductCard extends HTMLElement {
     static get observedAttributes() {
-        return ['title', 'description', 'image'];
+        return ['title', 'description', 'image', 'slug'];
     }
     
     constructor() {
@@ -20,6 +20,9 @@ class CustomProductCard extends HTMLElement {
         const title = this.getAttribute('title') || '';
         const description = this.getAttribute('description') || '';
         const image = this.getAttribute('image') || 'http://static.photos/textures/640x360';
+        // slug can be provided; otherwise generate a slug from title
+        const providedSlug = this.getAttribute('slug');
+        const slug = providedSlug || title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
         
         this.shadowRoot.innerHTML = `
             <style>
@@ -42,7 +45,8 @@ class CustomProductCard extends HTMLElement {
                 .product-image {
                     height: 250px;
                     background-image: url('${image}');
-                    background-size: cover;
+                    background-size: contain;
+                    background-repeat: no-repeat;
                     background-position: center;
                     position: relative;
                 }
@@ -79,6 +83,7 @@ class CustomProductCard extends HTMLElement {
                     transition: all 0.3s ease;
                     display: inline-block;
                     align-self: flex-start;
+                    text-decoration: none;
                 }
                 
                 .product-button:hover {
@@ -92,7 +97,7 @@ class CustomProductCard extends HTMLElement {
                 <div class="product-content">
                     <h3 class="product-title">${title}</h3>
                     <p class="product-description">${description}</p>
-                    <a href="productos.html" class="product-button">Ver Detalles</a>
+                    <a href="product.html?slug=${encodeURIComponent(slug)}" class="product-button">Ver Detalles</a>
                 </div>
             </div>
         `;
