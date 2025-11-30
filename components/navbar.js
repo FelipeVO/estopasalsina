@@ -93,10 +93,10 @@ class CustomNavbar extends HTMLElement {
             </style>
             
             <nav>
-                <a href="/" class="logo">Estopas Alsina</a>
+                <a href="index.html" class="logo">Estopas Alsina</a>
                 
                 <div class="nav-links">
-                    <a href="/">Inicio</a>
+                    <a href="index.html">Inicio</a>
                     <a href="about.html">Nosotros</a>
                     <a href="productos.html">Productos</a>
                     <a target="_blank" href="https://wa.me/541144136680" id="whatsapp-button">
