@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos | Estopas Alsina</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imgs/favicon-estopas-alsina.jpg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="imgs/favicon-estopas-alsina.jpg">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
@@ -56,13 +58,9 @@
                      alt="El Puente" class="w-full rounded-lg shadow-xl">
             </div>
             <div class="md:w-1/2">
-                <h2 class="text-3xl font-serif font-bold mb-4">El Puente</h2>
-                <p class="text-lg text-gray-700 mb-6">
-                    Estopa Blanca para lustre Premium. Compuesta con hilados Blancos y suaves, 100% algodón cortada en su tamaño justo y peinada en las estoperas para lograr una textura suave y delicada.
-                </p>
-                 <p class="text-lg text-gray-700 mb-6">
-                    "Lustre Profesional, Brillo Total"
-                </p>
+                <h2 class="text-3xl font-serif font-bold mb-4"></h2>
+                <p class="text-lg text-gray-700 mb-6"></p>
+                <p class="text-lg text-gray-700 mb-6"></p>
                 <a href="product.html?slug=el-puente" class="inline-block border-2 border-black px-6 py-3 rounded-full font-medium hover:bg-black hover:text-white transition duration-300">
                     Ver detalles completos
                 </a>
@@ -73,12 +71,8 @@
         <div class="flex flex-col md:flex-row gap-32 items-center mb-20" data-slug="v-a">
             <div class="md:w-1/2 order-2 md:order-1">
                 <h2 class="text-3xl font-serif font-bold mb-4">V.A.</h2>
-                <p class="text-lg text-gray-700 mb-6">
-                    Estopa color para limpieza. Compuesta con hilados de colores variados, 100% algodón ideal para limpieza por su absorción y resistencia.	
-                </p>
-                <p class="text-lg text-gray-700 mb-6">
-                 "Ultra absorbente"
-                </p>
+                <p class="text-lg text-gray-700 mb-6"></p>
+                <p class="text-lg text-gray-700 mb-6"></p>
                 <a href="product.html?slug=v-a" class="inline-block border-2 border-black px-6 py-3 rounded-full font-medium hover:bg-black hover:text-white transition duration-300">
                     Ver detalles completos
                 </a>
@@ -97,13 +91,8 @@
             </div>
             <div class="md:w-1/2">
                 <h2 class="text-3xl font-serif font-bold mb-4">Huinca</h2>
-                <p class="text-lg text-gray-700 mb-6">
-                    Estopa Blanca para limpieza. Compuesta con hilados Blancos, 100% algodón ideal para limpieza por su absorción y resistencia.
-                </p>
-
-                <p class="text-lg text-gray-700 mb-6">
-                    "Limpieza Total"
-                </p>
+                <p class="text-lg text-gray-700 mb-6"></p>
+                <p class="text-lg text-gray-700 mb-6"></p>
                 <a href="product.html?slug=huinca" class="inline-block border-2 border-black px-6 py-3 rounded-full font-medium hover:bg-black hover:text-white transition duration-300">
                     Ver detalles completos
                 </a>
@@ -114,12 +103,8 @@
         <div class="flex flex-col md:flex-row gap-32 items-center mb-20" data-slug="ecopano">
             <div class="md:w-1/2 order-2 md:order-1">
                 <h2 class="text-3xl font-serif font-bold mb-4">Ecopaño</h2>
-                <p class="text-lg text-gray-700 mb-6">
-                    Trapos nuevos, disponibles en blanco o a color, provenientes de tela 100% de algodón fino como remeras o buzos.
-                </p>
-                <p class="text-lg text-gray-700 mb-6">
-                    "Máxima suavidad, súper absorción"
-                </p>
+                <p class="text-lg text-gray-700 mb-6"></p>
+                <p class="text-lg text-gray-700 mb-6"></p>
                 <a href="product.html?slug=ecopano" class="inline-block border-2 border-black px-6 py-3 rounded-full font-medium hover:bg-black hover:text-white transition duration-300">
                     Ver detalles completos
                 </a>
@@ -165,6 +150,9 @@
                         if (img && p.image) {
                             img.src = p.image;
                             img.alt = p.title;
+                            img.loading = 'lazy';
+                            img.decoding = 'async';
+                            img.setAttribute('srcset', p.image);
                         }
 
                         // Update title
@@ -174,12 +162,12 @@
                         // Update main paragraph (first p.text-lg)
                         const pNodes = block.querySelectorAll('p.text-lg.text-gray-700');
                         if (pNodes && pNodes.length > 0) {
-                            pNodes[0].textContent = p.description;
+                            pNodes[0].textContent = p.short;
                         }
 
                         // Optionally update quote or second paragraph
                         if (pNodes && pNodes.length > 1 && p.short) {
-                            pNodes[1].textContent = p.short;
+                            pNodes[1].textContent = p.description;
                         }
 
                         // Update link href to canonical product page

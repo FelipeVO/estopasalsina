@@ -44,15 +44,15 @@ class CustomProductCard extends HTMLElement {
                 
                 .product-image {
                     height: 250px;
-                    background-image: url('${image}');
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    position: relative;
+                    width: 100%;
+                    display: block;
+                    object-fit: contain;
+                    object-position: center;
+                    background: transparent;
                 }
                 
                 .product-content {
-                    padding: 1.5rem;
+                    padding: 0 1.5rem 1.5rem 1.5rem;
                     flex-grow: 1;
                     display: flex;
                     flex-direction: column;
@@ -92,8 +92,8 @@ class CustomProductCard extends HTMLElement {
                 }
             </style>
             
-            <div class="product-card animate-fade-in">
-                <div class="product-image"></div>
+                <div class="product-card animate-fade-in">
+                <img class="product-image" src="${image}" alt="${title}" loading="lazy" decoding="async" srcset="${image}">
                 <div class="product-content">
                     <h3 class="product-title">${title}</h3>
                     <p class="product-description">${description}</p>

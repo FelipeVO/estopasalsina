@@ -22,6 +22,7 @@ class CustomFooter extends HTMLElement {
                     font-family: 'Playfair Display', serif;
                     font-size: 1.75rem;
                     font-weight: 700;
+                    margin-top: 0.7em;
                     margin-bottom: 1.5rem;
                     display: block;
                 }
@@ -126,15 +127,14 @@ class CustomFooter extends HTMLElement {
                     <ul class="footer-links">
                         <li><a href="index.html">Inicio</a></li>
                         <li><a href="about.html">Nosotros</a></li>
-                        <li><a href="productos.html">Productos</a></li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h3 class="footer-heading">Soporte</h3>
+                    <h3 class="footer-heading">Productos</h3>
                     <ul class="footer-links">
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Entregas</a></li>
+                        <li><a href="productos.html">Ver Todos</a></li>
+                        <li><a href="#contact">Consultas</a></li>
                     </ul>
                 </div>
                 
